@@ -4,6 +4,7 @@
 
 }
 .todo{
+  height: max-content;
   background-color: dodgerblue;
   padding: 10px;
   border-radius: 30px;
