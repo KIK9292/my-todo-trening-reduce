@@ -1,6 +1,17 @@
 import {ButtonTitleType, TodolistsType} from "../../App";
+import {v1} from "uuid";
 
-export const todolostReduce=(state:TodolistsType[],action:TsarType):TodolistsType[]=>{
+
+export let todolistId1 = v1()
+export let todolistId2 = v1()
+
+const initialTodolist: TodolistsType[] = [
+    {id: todolistId1, title: "What to learn", filter: "All"},
+    {id: todolistId2, title: "What to buy", filter: "All"}
+]
+
+
+export const todolistReduce=(state:TodolistsType[]=initialTodolist,action:TsarType):TodolistsType[]=>{
     switch (action.type){
         case "REMOVE-TODOLIST":{
 

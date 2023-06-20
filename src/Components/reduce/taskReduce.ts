@@ -1,7 +1,23 @@
 import {TasksStateType} from "../../App";
 import {v1} from "uuid";
+import {todolistId1, todolistId2} from "./todolistReduce";
 
-export const taskReduce=(state:TasksStateType,action:TsarType):TasksStateType=>{
+
+const initialTasks: TasksStateType = {
+    [todolistId1]: [
+        {id: v1(), title: "HTML&CSS", isDone: true},
+        {id: v1(), title: "JS", isDone: false}
+
+    ],
+    [todolistId2]: [
+        {id: v1(), title: "Milk", isDone: true},
+        {id: v1(), title: "React Book", isDone: true}
+    ],
+};
+
+
+
+export const taskReduce=(state:TasksStateType=initialTasks,action:TsarType):TasksStateType=>{
     switch (action.type){
         case "CHANGE-STATUS_CHECKBOX":{
             return {...state,[action.payload.idTodolist]:
