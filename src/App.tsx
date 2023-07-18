@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {v1} from "uuid";
-import {Todolist} from "./Components/Todolist/Todolist";
 import {AddItemForm} from "./Components/AddItemForm/AddItemForm";
 import {
     createTodolistAC,
@@ -12,6 +11,7 @@ import {
 import {createTodolistAndTaskAC, removeTodolistTaskAC} from "./Components/reduce/taskReduce";
 import {useDispatch, useSelector} from "react-redux";
 import {RootReducerType} from "./Components/reduce/Store";
+import {Todolist} from "./Components/Todolist/CreateNewTaskCallbackID";
 
 
 //Типизация Кнопок фильтрации
