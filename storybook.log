@@ -1,0 +1,12 @@
+yarn add v1.22.19
+[1/4] Resolving packages...
+error Couldn't find any versions for "@storybook/manager" that matches "7.1.0"
+info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
+Error: Couldn't find any versions for "@storybook/manager" that matches "7.1.0"
+    at MessageError.ExtendableBuiltin (C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:721:66)
+    at new MessageError (C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:750:123)
+    at Function.<anonymous> (C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:50351:13)
+    at Generator.next (<anonymous>)
+    at step (C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+    at C:\Users\USER\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
